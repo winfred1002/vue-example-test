@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1636956904585" clover="3.2.0">
+  <project timestamp="1636956904585" name="All files">
+    <metrics statements="15" coveredstatements="2" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="1" elements="26" coveredelements="3" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
+    <file name="Form.vue" path="C:\Users\winfred.chang\Desktop\vue-ts1115_0120\vue-ts1115_1130\vue-ts\winfred-vue\src\views\Form.vue">
+      <metrics statements="15" coveredstatements="2" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <line num="43" count="1" type="stmt"/>
+      <line num="45" count="2" type="stmt"/>
+      <line num="54" count="0" type="stmt"/>
+      <line num="55" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="56" count="0" type="stmt"/>
+      <line num="58" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="59" count="0" type="stmt"/>
+      <line num="60" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="61" count="0" type="stmt"/>
+      <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="64" count="0" type="stmt"/>
+      <line num="67" count="0" type="stmt"/>
+      <line num="69" count="0" type="stmt"/>
+      <line num="72" count="0" type="stmt"/>
+      <line num="73" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
