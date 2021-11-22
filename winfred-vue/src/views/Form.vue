@@ -7,9 +7,9 @@
       action="https://vuejs.org/"
       method="post">
       <span v-if="errors.length">
-        <b>Please correct the following error(s):</b>
-          <ul v-for="error in errors" :key="error">{{ error }}</ul>
-          <!-- <li v-for="(error, errors) in errors">{{ error }}</li> -->
+          <b>Please correct the following error(s):</b>
+          <span v-for="error in errors" :key="error">{{ error }}</span>
+          <br>
       </span>
       <label for="name">Name:</label>
       <input id="name" type="text" v-model="name" />
@@ -40,6 +40,7 @@
 </template>
 <script>
 export default {
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data () {
     return {
       name: '',
@@ -49,6 +50,7 @@ export default {
     }
   },
   methods: {
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     checkForm: function (e) {
       this.errors = []
       if (!this.name) {
@@ -67,8 +69,9 @@ export default {
       }
       e.preventDefault()
     },
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     validEmail: function (email) {
-      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       return re.test(email)
     }
   }
